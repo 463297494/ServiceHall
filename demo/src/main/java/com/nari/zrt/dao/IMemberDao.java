@@ -1,6 +1,6 @@
-package com.nari.ztr.dao;
+package com.nari.zrt.dao;
 
-import com.nari.ztr.entity.Member;
+import com.nari.zrt.entity.Member;
 
 public interface IMemberDao {
 	public Member findMemberById(Long mid);

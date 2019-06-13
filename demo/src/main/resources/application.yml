@@ -1,6 +1,6 @@
 server:
   port: 8000
-
+debug: false
 spring:
   application:
    name: demo
@@ -10,7 +10,7 @@ spring:
     username: root
     password: root
   redis:
-    database: 3
+    database: 0
     host: 127.0.0.1
     port: 6379
     jedis:
@@ -23,7 +23,7 @@ spring:
 
 mybatis:
   mapper-locations: classpath:/mapper/*.xml
-  type-aliases-package: com.nari.ztr.entity
+  type-aliases-package: com.nari.zrt.entity
   configuration:
     map-underscore-to-camel-case: true
 eureka:

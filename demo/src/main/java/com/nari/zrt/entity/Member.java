@@ -1,4 +1,4 @@
-package com.nari.ztr.entity;
+package com.nari.zrt.entity;
 
 import java.io.Serializable;
 import java.util.Date;

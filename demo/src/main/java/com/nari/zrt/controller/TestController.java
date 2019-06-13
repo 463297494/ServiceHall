@@ -1,4 +1,4 @@
-package com.nari.ztr.controller;
+package com.nari.zrt.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -7,8 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.nari.ztr.entity.Member;
-import com.nari.ztr.service.MemberService;
+import com.nari.zrt.entity.Member;
+import com.nari.zrt.service.MemberService;
 
 @Controller
 public class TestController {
@@ -19,7 +19,8 @@ public class TestController {
 	@RequestMapping("/demo")
 	@ResponseBody
 	public Member findMemberById(Long mid) {
-		logger.info(memberService.findMemberById(mid).toString());
-		return memberService.findMemberById(mid);
+		Member member = memberService.findMemberById(mid);
+		logger.info(member.toString());
+		return member;
 	}
 }
