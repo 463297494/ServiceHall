@@ -72,5 +72,6 @@
 		<module>demo</module>
 		<module>register</module>
 		<module>gateway</module>
+		<module>utils</module>
 	</modules>
 </project>
